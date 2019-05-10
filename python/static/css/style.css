@@ -1,0 +1,242 @@
+#map,
+body,
+html {
+  height: 400px;
+  Margin-left: 5px;
+  Margin-right: 5px;
+}
+
+.img-theme{
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    max-height: 80px !important;
+  }
+
+.fixed_header{
+  text-align: right ;
+  font-weight: bold ;
+}
+
+.href{
+    color: blue;
+    text-decoration: underline
+}
+
+.fixed_header{
+    width: 460px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.fixed_header tbody{
+  display:block;
+  width: 100%;
+  overflow: auto;
+  height: 250px;
+}
+
+.fixed_header thead tr {
+  display: block;
+}
+
+.fixed_header thead {
+  background:#4E2A84;
+  color:#fff;
+}
+
+.fixed_header th, .fixed_header td {
+    padding: 5px;
+    text-align: center;
+    width: 470px;
+  }
+
+.card-title {
+    background: white ;
+    font-size: 26px ;
+    color:#4E2A84;
+}
+
+.demographics_title {
+  padding: 20px;
+}
+
+.container-fluid {
+    border-bottom:10px solid rgb(78, 42, 132);
+}
+
+#myNavbar a:hover {
+    background-color: rgb(131, 110, 170);
+    color: white;
+    transition-duration: 0.4s;
+  }
+
+body {
+    min-height: 100%;
+    min-height: 100%;   
+}
+
+h1{
+    color: #4E2A84;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+}
+
+h2{
+    color: #4C4A4F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h3{
+    color: #58565C;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr{
+    border-top: 2px solid rgba(128, 128, 128, 0.685); 
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+p{
+    color: #4C4A4F;  
+}
+
+/* Text formatting for leaflet pop-ups */
+
+
+p2{
+  font: 12px Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+p3{
+  color: #4E2A84;
+  font-family: Arial, Helvetica, sans-serif; 
+  font-weight: bold;
+}
+
+p4{
+  color: #58565C;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p5{
+  /* if needed to format variables */
+}
+
+#main-map {
+    height: 900px;
+    width: 800px;
+    position: static;
+    padding: 70px;
+    orientation: auto;
+}
+
+.pager a{
+    color:#4C4A4F;
+    transition-duration: 0.3s;
+    color: #4E2A84;
+
+}
+
+.leaflet-popup-content {
+  text-align: center;
+}
+
+/* item below controls leaflet popups - state and trend markers */
+.leaflet-popup-content-wrapper{
+  min-width: 60px ;
+  max-width: 200px ;
+  min-height: 60px ;
+  max-width: 800px ;
+  padding: 2px ;
+}
+
+/* CSS from the Leaflet-Choropleth documentation */
+.legend {
+  padding: 6px 8px;
+  font: 12px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #555;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.legend ul {
+  padding: 0;
+  margin: 0;
+  clear: both;
+  list-style-type: none;
+}
+
+.legend li {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+}
+
+.legend .min {
+  float: left;
+  padding-bottom: 5px;
+}
+
+.legend .max {
+  float: right;
+}
+/* choropleth */
+
+footer {
+    background-color: #777;
+    color: rgb(230, 230, 230);
+    border: none;
+    position:relative; 
+    left:0px; 
+    bottom:0px; 
+    width:100%;
+    margin: 0px;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 10px solid rgb(78, 42, 132);
+}
+
+
+/* Style the search field */
+form.search input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.search button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: rgb(78, 42, 132);
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.search button:hover {
+  background: rgb(131, 110, 170);
+}
+
+/* Clear floats 
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
